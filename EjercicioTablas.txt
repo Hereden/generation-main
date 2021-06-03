@@ -1,0 +1,15 @@
+1.-( verdadero && verdadero )   = verdadero
+2.-( falso && verdadero )  = Falso
+3.-( verdadero && falso ) =Falso
+4.-( falso && falso ) =Falso
+5.-( verdadero || verdadero  )  =verdadero
+6.-( verdadero || falso ) = verdadero
+7.-( falso || verdadero) = verdadero
+8. ( falso || falso )  = Falso
+9. !( falso || verdadero ) =Falso
+10. !( falso && verdadero )  = verdadero
+11. ( !falso && verdadero ) = verdadero
+12. ( !verdadero && verdadero )  = Falso
+13. ( !falso || falso ) = verdadero
+
+VFFFVVVFFVVFV

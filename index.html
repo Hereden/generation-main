@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Medalla2.js"></script>
+    <script src="Medalla3.js"></script>
+    <script src="MedallaAPI.js"></script>
+    <title>Pagina pokemon !</title>
+</head>
+
+<body>
+    <h1>Buscando ser maistro puchamon !!!</h1>
+    <button id="reload" onclick="carGato()">Reload</button>
+    <br>
+    <img id="TeamGatos" src="" alt="Gatito?" height="200" width="500">
+    <script>
+        var image = document.getElementById("TeamGatos");
+        fetch('https://api.thecatapi.com/v1/images/search')
+            .then(res => res.json())
+            .then((json) => {
+                image.alt = json[0].url;
+                image.src = json[0].url + "?t=" + new Date().getTime();
+            })
+            .catch((err) => { console.error(err); });
+
+        function carGato() {
+            timestamp = new Date().getTime();
+            var uri = "";
+            fetch('https://api.thecatapi.com/v1/images/search')
+                .then(res => res.json())
+                .then((json) => { image.alt = json[0].url; image.src = json[0].url + "?t=" + new Date().getTime(); uri = json[0].url })
+                .catch((err) => { console.error(err); });
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+pida al usuario dos numeros del usuario
+sumar,restar,multiplicar y dividir
+y mostrar en consola.
+
+nombre y edad
+si es mayor de 18 años y menor de 30 
+aceptado sino lo sentimos no has sido aceptado
+Hacer un programa en javascript en donde se le pregunte la edad al usuario y si el usuario tiene 18 años o mas y
+ menos de 29 años, le impriman por consola que ha sido aceptado en el programa de generation, 
+en caso de no ser así mostrar un mensaje indicando que no cumple los requisitos del programa
+
+Calcular el salario bruto y neto mensual y quincenal de una persona, el salario diario debe ser ingresado por el usuario a traves de promt, los descuentos para calcular el sueldo netos serán sueldo bruto - ISR(30%)  - IMSS(10%)
+
+if(edad>=18 && edad<=29{console.log("Felicidaddes....");}
+else{ console.log("por favor..."); }
+
