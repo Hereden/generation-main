@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(211,211,211);
+}
+.eti{
+    background-color: rgb(128, 128,128);
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.titu{
+    width: 90%;
+    padding-left: 100px;
+}
+.red{
+    color:red;
+}
+.tsombreado{
+    background-color: white;
+    font-weight: 700;
+}
+.texto{
+    text-indent: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    text-align: justify;
+    width: 80%;
+}
+.imagen{
+    width: 130px;
+    height: 150px;
+    float: left;
+    padding-left: 150px;
+}
+div{
+    clear:both;
+    float: none;
+}
