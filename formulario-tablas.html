@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="assets/dist/css/bootstrap-grid.rtl.css">
     <link rel="stylesheet" href="assets/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/dist/css/bootstrap-utilities.css">
+    
 </head>
 
-<body>
-    <h1>Formularios y tablas</h1>
-    <table class="table table-dark table-hover fw-bold">
+<body class="bg-dark" style="color: white;">
+    <h1 class="text-center" style="color:cyan">Formularios y tablas</h1>
+    <table class="table table-dark table-hover fw-bold text-center">
         <tr>
             <td colspan="2"></td>
             <td>Nombre</td>
@@ -92,13 +93,16 @@
             <td>16,1</td>
         </tr>
     </table>
+    <hr />
     <table class="table table-dark table-hover">
-        <th><!--Table Row-->
-            <td>Lunes</td><!--Table data-->
-            <td>Martes</td>
-            <td>Miercoles</td>
-            <td>Jueves</td>
-            <td>Viernes</td>
+        <th>
+            <!--Table Row-->
+        <td>Lunes</td>
+        <!--Table data-->
+        <td>Martes</td>
+        <td>Miercoles</td>
+        <td>Jueves</td>
+        <td>Viernes</td>
         </th>
         <tr>
             <td>9:30 a 11:00 am</td>
@@ -133,6 +137,76 @@
             <td>Curso Español</td>
         </tr>
     </table>
+    <hr />
+    <h1 class="text-center" style="color:cyan">Formulario</h1>
+    <form action="" method="POST">
+        <h3>Registrate</h3>
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="name" placeholder="Nombre Apellidos" required />
+        </p>
+        <p>
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="email" placeholder="email@gmail.com" required />
+        </p>
+        <p>
+            <label for="cumpleanio">Cumpleaños:</label>
+            <input type="date" name="cumpleanio" />
+        </p>
+        <p>
+            <label for="numeros">Solo numeross:</label>
+            <input type="number" name="numeros" />
+        </p>
+        <p>
+            <label for="barra1">Slider:</label>
+            <input type="range" id="barra1" name="barra1" min="200" max="1000" step="1" value="500"/>
+            <output class="barra1-output" for="barra1" style="color: white;"></output>
+
+        </p>
+        <p>
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" />
+        </p>
+        <p>
+            <select name="meses" id="">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox"/>
+            <label for="">Opción 1</label>
+        </p>
+        <p>
+            <input type="radio" name="color" value="rojo">
+            <label for="">Rojo</label>
+            <input type="radio" name="color" value="verde">
+            <label for="">Verde</label>
+            <input type="radio" name="color" value="azul">
+            <label for="">Azul</label>
+            <input type="radio" name="color" value="amarillo">
+            <label for="">Amarillo</label>
+            <input type="radio" name="color" value="naranja">
+            <label for="">Naranja</label>
+        </p>
+        <p>
+            <textarea  style="resize: none;" name="muchotexto" id="" cols="60" rows="20"></textarea>
+        </p>
+        <!--<input type="submit" value="Registrar">-->
+        <button type="submit" class="btn btn-outline-dark">Registrar</button>
+    </form>
+    <script>
+        const barra1 = document.querySelector('#barra1')
+        const output = document.querySelector('.barra1-output')
+
+        output.textContent = barra1.value
+
+        barra1.addEventListener('input', function () {
+            output.textContent = barra1.value
+        });
+    </script>
 </body>
 
 </html>
